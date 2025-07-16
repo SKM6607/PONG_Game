@@ -1,0 +1,160 @@
+h1 {
+  text-align: center;
+}
+.victoryMsg {
+  color: white;
+  position: absolute;
+  top: 50%;
+  z-index: 20;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background: green;
+  animation: blink normal 3s;
+  text-align: center;
+  height: 100%;
+}
+.noVictory {
+  display: none;
+}
+.holderPlayers {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: xx-large;
+}
+.victoryMsg h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: cursive;
+  font-size: 6rem;
+}
+@keyframes blink {
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.gameTitle {
+  color: white;
+  z-index: 10;
+  margin-top: 20vh;
+  font-size: 6rem;
+  letter-spacing: 1rem;
+}
+html {
+  font-size: 62.5%;
+}
+.hidden {
+  position: relative;
+  margin-top: 6.5%;
+  margin-bottom: none;
+  transform: translate(-50%, -50%);
+  font-size: xx-large;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  border-radius: 2rem;
+}
+.hidden:hover {
+  color: white;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(to right, #4ecdc4, #556270);
+}
+body,
+html {
+  overflow: hidden;
+}
+.howToModal div h1 {
+  flex-basis: 85%;
+  margin-top: 6.5%;
+}
+.howToModal div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.howToModal {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  position: absolute;
+  background-color: white;
+  z-index: 100;
+  font-size: medium;
+  width: 550px;
+  color: black;
+  text-align: left;
+  padding-left: 20px;
+  border-radius: 4rem;
+  font-weight: 600;
+  height: 90%;
+}
+.menu {
+  position: absolute;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.playBtn {
+  margin-top: 15vh;
+  width: 200px;
+}
+.howTo {
+  margin-top: 3vh;
+  width: 200px;
+}
+.gitHub {
+  margin-top: 3vh;
+  width: 300px;
+}
+.menu button {
+  border: none;
+  cursor: pointer;
+  border-radius: 2rem;
+  font-size: 3rem;
+  font-family: cursive;
+  color: black;
+  background: linear-gradient(to right, #4ecdc4, #556270);
+}
+.menu button:hover {
+  color: wheat;
+  background: linear-gradient(to left, #4ecdc4, #556270);
+}
+body {
+  background-color: darkslategray;
+}
+#canvasIn {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: calc(100vw - 250px);
+  height: calc(100vh - 200px);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  box-sizing: border-box;
+  background-color: black;
+  border-radius: 2rem;
+  box-shadow: 0rem 2rem 3rem;
+}
+.gameShow {
+  display: none;
+}
+.Game {
+  display: none;
+}

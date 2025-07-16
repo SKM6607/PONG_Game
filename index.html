@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <meta charset="UTF-8" />
+  <head>
+    <title>A simple PONG game</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="victoryMsg noVictory">
+      <h1 class="displayVictory">Player 1 Wins!</h1>
+    </div>
+    <div class="menu Game">
+      <h1 class="gameTitle">PONG</h1>
+      <button class="playBtn">Play</button>
+      <button class="howTo">How to Play?</button>
+      <button class="gitHub">Know about me!</button>
+    </div>
+    <div class="howToModal gameShow">
+      <div>
+        <h1 style="color: red">HOW TO PLAY?</h1>
+        <button class="hidden">&times;</button>
+      </div>
+      <pre>
+🎮 HOW TO PLAY PONG
+
+OBJECTIVE:
+- Keep the ball from passing your paddle.
+- Score points when the ball gets past your opponent's paddle.
+
+GAME ELEMENTS:
+- Two paddles (one for each player or one player vs computer).
+- One ball that bounces off walls and paddles.
+- A rectangular playing field (screen or canvas).
+
+CONTROLS:
+Player 1 (Left Paddle):
+  - W = Move Up
+  - S = Move Down
+
+Player 2 (Right Paddle):
+  - Up Arrow (↑) = Move Up
+  - Down Arrow (↓) = Move Down
+
+RULES:
+- The ball starts in the center and moves diagonally.
+- It bounces off the top and bottom walls.
+- If the ball hits a paddle, it bounces back.
+- If the ball passes a paddle, the other player scores.
+- First to a set score (e.g. 5 or 10) wins!
+
+TIPS:
+- React quickly to the ball's direction.
+- Try to hit the ball with the edge of your paddle to change its angle.
+- Practice to improve your reflexes!
+</pre
+      >
+    </div>
+    <div class="canvasDiv">
+      <div class="holderPlayers">
+        <h1 class="score">0</h1>
+        <h1 class="score">0</h1>
+      </div>
+      <canvas id="canvasIn"></canvas>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
